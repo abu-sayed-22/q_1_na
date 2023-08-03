@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sword Design</title>
+
+  <style>
+    body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+.sword {
+  position: relative;
+  width: 150px;
+  height: 400px;
+}
+
+.blade {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 300px;
+  background-color: silver;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.handle {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 100px;
+  background-color: brown;
+  border-radius: 10px;
+}
+
+.guard {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 20px;
+  background-color: gray;
+  border-radius: 5px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="sword">
+    <div class="blade"></div>
+    <div class="handle"></div>
+    <div class="guard"></div>
+  </div>
+</body>
+</html>
